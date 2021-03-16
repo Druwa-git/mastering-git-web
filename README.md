@@ -1,4 +1,4 @@
-* 예시 버전입니다.
+_**예시 버전입니다.**_
 ---
 
 # Speech Restaurant Menu for Chef
@@ -14,6 +14,20 @@ espnet의 open source를 어느 정도 빌려 모델을 만들 것이며, iOS �
 
 ## Method
 ### espnet
+`espnet`에서 `Text to Speech(TTS)` 를 구현하려면 총 7가지의 `method`를 따라야 한다.
+_아래는 예시 그림입니다._
+![image](https://user-images.githubusercontent.com/51294226/111150517-89b60a80-85d1-11eb-8c4b-88153ee55d41.png)
+1. Data Preparation
+2. Wav dump or Feature extraction
+3. Removal of long / short data
+4. Token list generation
+5. TTS statistics collection
+6. TTS training
+7. TTS decoding
+8. (optinal) Pack results for upload
+
+8번은 굳이 구현하지 않아도 될 것 같아서, 일단 7번까지의 과정이 필요하다.
+
 
 
 
